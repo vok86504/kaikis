@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrainerQ Design System | George Mitra</title>
+  <meta name="description" content="TrainerQ Design System: a Figma component library built on shadcn/ui that maps 1:1 to code. By George Mitra.">
+  <meta property="og:title" content="TrainerQ Design System — case study by George Mitra">
+  <meta property="og:image" content="https://kaikis.web.app/images/trainerqui-hero.jpg">
+  <meta name="theme-color" content="#ff6a13">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='12' fill='%23ff6a13' stroke='%2316130f' stroke-width='5'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23fff'%3EK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Permanent+Marker&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>(function(){var d=document.documentElement;d.classList.add("js");try{var t=localStorage.getItem("kaikis-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Kaikis home"><span class="seal" aria-hidden="true">K</span>Kaikis</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#work" aria-current="page">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#arcs">Experience</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a class="btn" href="index.html#contact">Let's Talk</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="theme-btn" type="button" aria-pressed="false" aria-label="Switch to night mode"><span class="day" aria-hidden="true">昼</span><span class="night" aria-hidden="true">夜</span></button>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="back" href="index.html#work">← Back to work</a>
+      <div class="chapter"><span class="ep">EP.06</span><span class="jp">第六話</span></div>
+      <div><span class="sticker sticker--teal">Design System · Figma</span></div>
+      <h1 class="case-title"><span class="pop pop--orange">TrainerQ</span><br><span class="pop">Design System</span></h1>
+      <p class="case-lede">A Figma component library built on shadcn/ui, bridging design and engineering with a unified, battle-tested design language for TrainerQ.</p>
+
+      <dl class="meta panel">
+        <div><dt>Role</dt><dd>Design Systems Lead · Component Architecture</dd></div>
+        <div><dt>Year</dt><dd>2025</dd></div>
+        <div><dt>Tools</dt><dd><ul class="chips"><li class="chip chip--o">Figma</li><li class="chip chip--o">shadcn/ui</li><li class="chip chip--t">Radix UI</li><li class="chip chip--t">Tailwind CSS</li><li class="chip chip--p">TypeScript</li><li class="chip chip--y">Storybook</li></ul></dd></div>
+        <div><dt>Product</dt><dd><a href="trainerq.html">TrainerQ →</a></dd></div>
+      </dl>
+
+      <figure class="case-cover panel" style="margin:0">
+        <img src="images/trainerqui-hero.jpg" alt="TrainerQ UI design system cover" width="960" height="540">
+      </figure>
+    </div>
+  </section>
+
+  <section class="case-body band">
+    <div class="wrap">
+      <div class="case-sec reveal">
+        <div><span class="jp-big">課題 · Challenge</span><h2>The challenge</h2></div>
+        <div class="prose">
+          <p>As a solo designer-developer, keeping visual consistency across a product as complex as TrainerQ quickly becomes unsustainable without a structured system. TrainerQ has dashboards, RPG progression screens, coach portals, and a marketplace.</p>
+          <p>The challenge: build a design system that is fast to work with in Figma, <span class="marker">maps 1:1 to the code components</span>, and scales as the product grows, all without a dedicated design systems team.</p>
+        </div>
+      </div>
+
+      <div class="case-sec reveal">
+        <div><span class="jp-big">解決 · Solution</span><h2>The solution</h2></div>
+        <div class="prose">
+          <p>I chose shadcn/ui as the foundation (a component collection built on Radix UI primitives and Tailwind CSS) and extended it with TrainerQ-specific patterns. The Figma library mirrors the codebase component for component, so nothing gets lost translating design into implementation.</p>
+          <ul class="feature-list">
+            <li>Full component library in Figma with variants, states, and interactive prototyping</li>
+            <li>Token-based color system aligned with Tailwind CSS custom properties</li>
+            <li>Dark-mode-first design with consistent contrast ratios across all surfaces</li>
+            <li>Game components: XP bars, character stat cards, tier badges, achievement modals</li>
+            <li>Shared spacing, typography, and shadow scales as Figma variables</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-sec reveal">
+        <div><span class="jp-big">過程 · Process</span><h2>My process</h2></div>
+        <div class="prose">
+          <p>The system grew iteratively alongside the product. I designed components only when they were needed, which avoided premature abstraction while keeping everything documented and reusable.</p>
+          <ol class="steps">
+            <li><span>Audited existing screens to identify repeated UI patterns worth abstracting</span></li>
+            <li><span>Defined the token layer first: color, typography, spacing, elevation</span></li>
+            <li><span>Built base components and extended them with TrainerQ-specific overrides</span></li>
+            <li><span>Created usage guidelines and annotation templates directly in Figma</span></li>
+            <li><span>Validated component fidelity by building screens from library pieces only</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="chapter"><span class="ep">Panels</span><span class="jp">画面</span></div>
+        <h2 class="sec-title">System <span class="pop pop--teal">snapshots</span></h2>
+        <p class="sec-lede">Component library previews and usage examples. Tap to zoom in.</p>
+      </div>
+      <div class="gallery">
+        <figure class="panel reveal"><button type="button" data-full="images/trainerqui1.jpg"><img src="images/trainerqui1.jpg" alt="TrainerQ design system components" loading="lazy"></button></figure>
+        <figure class="panel reveal"><button type="button" data-full="images/trainerqui3.jpg"><img src="images/trainerqui3.jpg" alt="TrainerQ design system usage examples" loading="lazy"></button></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <a class="next-ep panel" href="archive.html">
+        <div><small>BONUS EPISODES</small><strong>The Archive</strong></div>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span class="tbc"><span class="jp">つづく</span>To be continued…</span>
+    <nav aria-label="Footer"><a href="index.html#work">Work</a><a href="archive.html">Archive</a><a href="mailto:jottpp@gmail.com">Email</a><a href="https://www.linkedin.com/in/gmmitra/" target="_blank" rel="noopener">LinkedIn</a></nav>
+    <span>© 2026 Kaikis · Designed &amp; coded by Jott</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

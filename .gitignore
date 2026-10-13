@@ -1,0 +1,15 @@
+# Firebase CLI cache
+.firebase/
+*.log
+
+# Local tooling / settings
+.claude/
+node_modules/
+
+# Old site backups (not for the public repo)
+_backup-old-site/
+
+# OS clutter
+Thumbs.db
+Desktop.ini
+.DS_Store

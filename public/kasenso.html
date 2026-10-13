@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kasenso POS | George Mitra</title>
+  <meta name="description" content="Kasenso POS: a cloud point-of-sale for small food businesses, with checkout, a kitchen display, recipe-based inventory, reports, and KAISHA, an AI marketing assistant. Live on Google Play.">
+  <meta property="og:title" content="Kasenso POS — case study by George Mitra">
+  <meta property="og:image" content="https://kaikis.web.app/images/kasenso/pos.jpg">
+  <meta name="theme-color" content="#ff6a13">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='12' fill='%23ff6a13' stroke='%2316130f' stroke-width='5'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23fff'%3EK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Permanent+Marker&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>(function(){var d=document.documentElement;d.classList.add("js");try{var t=localStorage.getItem("kaikis-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Kaikis home"><span class="seal" aria-hidden="true">K</span>Kaikis</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#work" aria-current="page">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#arcs">Experience</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a class="btn" href="index.html#contact">Let's Talk</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="theme-btn" type="button" aria-pressed="false" aria-label="Switch to night mode"><span class="day" aria-hidden="true">昼</span><span class="night" aria-hidden="true">夜</span></button>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="back" href="index.html#work">← Back to work</a>
+      <div class="chapter"><span class="ep">EP.02</span><span class="jp">第二話</span></div>
+      <div><span class="sticker sticker--teal">Live on Google Play</span> <span class="sticker">Point of Sale · Food &amp; Retail</span></div>
+      <h1 class="case-title"><span class="pop">Kasenso</span> <span class="pop pop--orange">POS</span></h1>
+      <p class="case-lede"><strong>“You sell. We count.”</strong> A cloud point-of-sale built for small and medium food businesses, not enterprise chains. Take orders, run the kitchen, track inventory, manage staff, and see sales the moment they happen, all from a phone or tablet.</p>
+
+      <dl class="meta panel">
+        <div><dt>Role</dt><dd>Product Owner · Product Design · Development · Release &amp; Support</dd></div>
+        <div><dt>Status</dt><dd>Live in production · running daily restaurant orders in Quezon</dd></div>
+        <div><dt>Platform</dt><dd>Android app · Installable PWA (offline) · Tablet · Desktop</dd></div>
+        <div><dt>Links</dt><dd><a href="https://kasenso.com" target="_blank" rel="noopener">kasenso.com ↗</a><br><a href="https://play.google.com/store/apps/details?id=com.kasenso.pos" target="_blank" rel="noopener">Google Play ↗</a></dd></div>
+      </dl>
+
+      <figure class="case-cover panel" style="margin:0">
+        <img src="images/kasenso/pos.jpg" alt="Kasenso POS checkout: product grid of chicken meals and drinks beside the current order, discount, VAT, and Pay Now button" width="1586" height="992">
+      </figure>
+    </div>
+  </section>
+
+  <section class="case-body band">
+    <div class="wrap">
+      <div class="case-sec reveal">
+        <div><span class="jp-big">課題 · Challenge</span><h2>The challenge</h2></div>
+        <div class="prose">
+          <p>Most POS systems in the Philippine SMB market are too expensive, too complex, or designed for a Western retail context that doesn't match local business realities. Carinderias, fried-chicken and milk-tea shops, and market stall vendors need something that works with how they actually operate.</p>
+          <p>The challenge: design a POS that feels <span class="marker">as fast as cash</span>. It needed zero learning curve for first-time users, had to work on a low-cost phone or tablet, and had to handle local realities like peso denominations, loose item quantities, flavor add-ons, and daily cash reconciliation, even when the internet drops mid-rush.</p>
+        </div>
+      </div>
+
+      <div class="case-sec reveal">
+        <div><span class="jp-big">解決 · Solution</span><h2>The solution</h2></div>
+        <div class="prose">
+          <p>Kasenso strips the counter down to the essentials (a clean checkout, fast product search, and a cash tender flow built for speed) and then quietly does the counting in the background. Large tap targets and minimal cognitive load let cashiers process orders without studying the screen.</p>
+          <ul class="feature-list">
+            <li>Touch-first POS for dine-in, takeout, and delivery, with flavor and add-on choices</li>
+            <li>Kitchen Display System: orders land in the kitchen instantly, with no paper tickets</li>
+            <li>Inventory that deducts itself from recipes, plus wastage, low-stock, and expiry alerts</li>
+            <li>Recipe costing with true food cost, margin, and a health check per item</li>
+            <li>Shifts with cash reconciliation, void tracking, and role-based staff access</li>
+            <li>Reports, CSV export, and a nightly Manager's Daily Report</li>
+            <li>Online ordering storefront with a shareable link and a customer database</li>
+            <li>KAISHA: an AI marketing assistant that drafts Facebook posts from the week's sales</li>
+            <li>Offline-first: keep selling when the internet drops, auto-sync when it's back</li>
+            <li>Bluetooth receipt printing and a native Android app on Google Play</li>
+          </ul>
+          <p style="margin-top:26px"><strong>Under the hood:</strong> an Android app plus an installable PWA with offline support, Firebase and Firestore, Cloud Functions, scheduled reporting jobs, and AI-assisted marketing copy. I own the Play Console releases, app signing, and customer support.</p>
+          <ul class="chips"><li class="chip chip--o">Next.js</li><li class="chip chip--o">React</li><li class="chip chip--o">TypeScript</li><li class="chip chip--t">Firebase</li><li class="chip chip--t">Firestore</li><li class="chip chip--t">Cloud Functions</li><li class="chip chip--p">Capacitor (Android)</li><li class="chip chip--p">PWA</li><li class="chip chip--y">Play Console</li></ul>
+        </div>
+      </div>
+
+      <div class="case-sec reveal">
+        <div><span class="jp-big">過程 · Process</span><h2>My process</h2></div>
+        <div class="prose">
+          <p>I spent time in real stores and food stalls doing contextual observation: watching how owners track sales, where friction happens, and what shortcuts they already use. The design came from those observations, not assumptions.</p>
+          <ol class="steps">
+            <li><span>Contextual inquiry sessions with small business owners and cashiers in Metro Manila</span></li>
+            <li><span>Journey mapping of the full transaction cycle, from product lookup to receipt to end-of-shift count</span></li>
+            <li><span>Sketching and rapid paper prototyping to validate checkout flow concepts</span></li>
+            <li><span>Tablet-first wireframes with accessibility and glare resistance in mind</span></li>
+            <li><span>Usability testing with 8 participants across different store types</span></li>
+            <li><span>Designed and built the production app, then shipped it to the web and Google Play</span></li>
+            <li><span>Operating it in daily restaurant service, iterating from real use, and shipping regular releases</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="chapter"><span class="ep">Panels</span><span class="jp">画面</span></div>
+        <h2 class="sec-title">Inside the <span class="pop pop--orange">app</span></h2>
+        <p class="sec-lede">Screens from the live product on Google Play. Tap any panel to zoom in.</p>
+      </div>
+
+      <div class="split-feature reveal">
+        <div class="split-media panel"><button type="button" data-full="images/kasenso/tablet4.jpg"><img src="images/kasenso/tablet4.jpg" alt="Tablet POS with category tabs, product grid, and current order with Pay Now" loading="lazy"></button></div>
+        <div class="split-copy">
+          <span class="sticker">Point of Sale &amp; Shifts</span>
+          <h3>A checkout as fast as cash</h3>
+          <p>Category tabs, a photo grid with short item codes, and a running order on the right. Shifts open and close with cash reconciliation, and every void is tracked to the staff member who made it.</p>
+        </div>
+      </div>
+
+      <div class="split-feature reveal">
+        <div class="split-media panel"><button type="button" data-full="images/kasenso/tablet3.jpg"><img src="images/kasenso/tablet3.jpg" alt="Kitchen Display showing order tickets with Start Preparing and Mark as Ready buttons" loading="lazy"></button></div>
+        <div class="split-copy">
+          <span class="sticker sticker--teal">Kitchen Display</span>
+          <h3>Orders land in the kitchen instantly</h3>
+          <p>Every ticket shows dine-in or takeout, flavors, and add-ons. The cooks tap <em>Start Preparing</em>, then <em>Mark as Ready</em>, with no paper and no shouting over the counter.</p>
+        </div>
+      </div>
+
+      <div class="split-feature reveal">
+        <div class="split-media panel"><button type="button" data-full="images/kasenso/tablet2.jpg"><img src="images/kasenso/tablet2.jpg" alt="Inventory Management table with stock value, low-stock alerts, and ingredient list" loading="lazy"></button></div>
+        <div class="split-copy">
+          <span class="sticker">Inventory &amp; Wastage</span>
+          <h3>Inventory that deducts itself</h3>
+          <p>Each sale deducts ingredients from its recipe automatically. Owners see total stock value, low-stock and expiring items, and wastage down to the gram, without a weekly manual count.</p>
+        </div>
+      </div>
+
+      <div class="split-feature reveal">
+        <div class="split-media panel"><button type="button" data-full="images/kasenso/tablet5.jpg"><img src="images/kasenso/tablet5.jpg" alt="Recipe editor for Original Chicken Wings with ingredient quantities and a costing summary" loading="lazy"></button></div>
+        <div class="split-copy">
+          <span class="sticker sticker--pink">Recipe Costing</span>
+          <h3>Know the true cost of every plate</h3>
+          <p>The recipe editor turns ingredients into food cost, overhead, margin, and a simple health indicator, so pricing decisions stop being guesswork.</p>
+        </div>
+      </div>
+
+      <div class="split-feature reveal">
+        <div class="split-media panel"><button type="button" data-full="images/kasenso/tablet6.jpg"><img src="images/kasenso/tablet6.jpg" alt="Business Performance report with gross revenue, net revenue, VAT, cost of goods, and operating profit" loading="lazy"></button></div>
+        <div class="split-copy">
+          <span class="sticker sticker--white">Reports</span>
+          <h3>Numbers an owner actually reads</h3>
+          <p>Gross and net revenue, VAT, cost of goods, operating profit, and top sellers, with Z-reports, daily reports, and CSV export one tap away.</p>
+        </div>
+      </div>
+
+      <div class="split-feature reveal">
+        <div class="split-media panel"><button type="button" data-full="images/kasenso/tablet1.jpg"><img src="images/kasenso/tablet1.jpg" alt="Menu item editor with selling price, margin, add-on price, and choice groups" loading="lazy"></button></div>
+        <div class="split-copy">
+          <span class="sticker sticker--teal">Menu, Flavors &amp; Promos</span>
+          <h3>Build a menu in an afternoon</h3>
+          <p>Prices, codes, categories, add-ons, and choice groups (like <em>pick a flavor</em>) are all set up in one form, with live margin feedback as you type.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="chapter"><span class="ep">Mobile</span><span class="jp">携帯</span></div>
+        <h2 class="sec-title">Runs the whole shop<br>from a <span class="pop pop--teal">phone</span></h2>
+        <p class="sec-lede">The same product, re-flowed for one-handed use at a busy counter: selling, flavor choices, checkout, reports, inventory, and KAISHA, the AI marketing assistant.</p>
+      </div>
+      <div class="phones reveal">
+        <button type="button" data-full="images/kasenso/phone1.png"><img src="images/kasenso/phone1.png" alt="Phone POS product grid" loading="lazy"></button>
+        <button type="button" data-full="images/kasenso/phone2.png"><img src="images/kasenso/phone2.png" alt="Phone flavor choice sheet" loading="lazy"></button>
+        <button type="button" data-full="images/kasenso/phone3.png"><img src="images/kasenso/phone3.png" alt="Phone current order and Pay Now" loading="lazy"></button>
+        <button type="button" data-full="images/kasenso/phone4.png"><img src="images/kasenso/phone4.png" alt="Phone business performance report" loading="lazy"></button>
+        <button type="button" data-full="images/kasenso/phone5.png"><img src="images/kasenso/phone5.png" alt="Phone inventory list with restock actions" loading="lazy"></button>
+        <button type="button" data-full="images/kasenso/phone6.png"><img src="images/kasenso/phone6.png" alt="Phone KAISHA AI marketing assistant" loading="lazy"></button>
+      </div>
+      <div class="store-row" style="margin-top:48px">
+        <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.kasenso.pos" target="_blank" rel="noopener"><img src="images/kasenso/google-play-badge.svg" alt="Get it on Google Play" width="180" height="53"></a>
+        <a class="btn btn--white" href="https://kasenso.com" target="_blank" rel="noopener">Visit kasenso.com ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <a class="next-ep panel" href="trainerq.html">
+        <div><small>NEXT EPISODE · EP.03</small><strong>TrainerQ</strong></div>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span class="tbc"><span class="jp">つづく</span>To be continued…</span>
+    <nav aria-label="Footer"><a href="index.html#work">Work</a><a href="archive.html">Archive</a><a href="mailto:jottpp@gmail.com">Email</a><a href="https://www.linkedin.com/in/gmmitra/" target="_blank" rel="noopener">LinkedIn</a></nav>
+    <span>© 2026 Kaikis · Designed &amp; coded by Jott</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

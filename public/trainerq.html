@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrainerQ | George Mitra</title>
+  <meta name="description" content="TrainerQ: a gamified fitness MMORPG that turns daily workouts into an RPG adventure, designed and built solo by George Mitra.">
+  <meta property="og:title" content="TrainerQ — case study by George Mitra">
+  <meta property="og:image" content="https://kaikis.web.app/images/TrainerQshots.jpg">
+  <meta name="theme-color" content="#ff6a13">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='12' fill='%23ff6a13' stroke='%2316130f' stroke-width='5'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23fff'%3EK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Permanent+Marker&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>(function(){var d=document.documentElement;d.classList.add("js");try{var t=localStorage.getItem("kaikis-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Kaikis home"><span class="seal" aria-hidden="true">K</span>Kaikis</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#work" aria-current="page">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#arcs">Experience</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a class="btn" href="index.html#contact">Let's Talk</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="theme-btn" type="button" aria-pressed="false" aria-label="Switch to night mode"><span class="day" aria-hidden="true">昼</span><span class="night" aria-hidden="true">夜</span></button>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="back" href="index.html#work">← Back to work</a>
+      <div class="chapter"><span class="ep">EP.03</span><span class="jp">第三話</span></div>
+      <div><span class="sticker sticker--pink">Live on Google Play</span> <span class="sticker">Product Build</span></div>
+      <h1 class="case-title"><span class="pop pop--orange">TrainerQ</span></h1>
+      <p class="case-lede"><strong>“Your workouts. Your adventure.”</strong> A gamified fitness and coaching platform that turns daily workouts into an RPG adventure: your body is your character, and every workout earns XP. I designed and built it solo, from concept to a live Google Play release.</p>
+
+      <dl class="meta panel">
+        <div><dt>Role</dt><dd>Product Owner · Lead Developer · Product Design · User Research</dd></div>
+        <div><dt>Year</dt><dd>2025 — Present</dd></div>
+        <div><dt>Tech stack</dt><dd><ul class="chips"><li class="chip chip--o">Next.js</li><li class="chip chip--o">React</li><li class="chip chip--o">TypeScript</li><li class="chip chip--t">Firebase</li><li class="chip chip--t">Firestore</li><li class="chip chip--t">Firebase Studio</li><li class="chip chip--p">Recharts</li><li class="chip chip--p">Figma</li><li class="chip chip--y">AI-assisted coding</li></ul></dd></div>
+        <div><dt>Links</dt><dd><a href="https://trainerq.com" target="_blank" rel="noopener">trainerq.com ↗</a><br><a href="https://play.google.com/store/apps/details?id=com.trainerq.app" target="_blank" rel="noopener">Google Play ↗</a></dd></div>
+      </dl>
+
+      <figure class="case-cover panel" style="margin:0">
+        <img src="images/TrainerQshots.jpg" alt="TrainerQ screens: character progression, quick actions, weekly consistency, and volume trends" width="1140" height="820">
+      </figure>
+    </div>
+  </section>
+
+  <section class="case-body band">
+    <div class="wrap">
+      <div class="case-sec reveal">
+        <div><span class="jp-big">課題 · Challenge</span><h2>The challenge</h2></div>
+        <div class="prose">
+          <p>Most fitness apps overwhelm users with “data fatigue.” When the interface feels like a spreadsheet, people get bored or frustrated and quit.</p>
+          <p>The core problem: how do you make daily workout logging feel rewarding enough that users come back <span class="marker">because they want to</span>, not because they have to?</p>
+        </div>
+      </div>
+
+      <div class="case-sec reveal">
+        <div><span class="jp-big">解決 · Solution</span><h2>The solution</h2></div>
+        <div class="prose">
+          <p>I redesigned the logging experience to be as frictionless as possible, moving away from dense charts and manual entry. To keep users hooked, I turned their physical progress into an RPG-style adventure.</p>
+          <p>Instead of staring at heart rate graphs, users level up a character, like a Warrior or Archer, so daily consistency feels like a game rather than data entry.</p>
+          <ul class="feature-list">
+            <li>RPG character progression: XP, levels, character classes, and stat points</li>
+            <li>Workout logging, streaks, and weekly goals, plus a guided 7-minute first quest</li>
+            <li>AI-generated meal plans and workout suggestions</li>
+            <li>Stat Scan: self-assessed real-life stats you rescan to watch them move</li>
+            <li>Community raid bosses, rivals, leaderboards, and a social feed</li>
+            <li>Gamified difficulty tiers (Revenant, Raider, Slayer) to escalate the challenge</li>
+            <li>Coach marketplace with bookings, messaging, and push notifications</li>
+            <li>Coach toolkit: client roster, programs, PAR-Q assessments, and progress tracking</li>
+            <li>Social sign-in for a fast first session</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-sec reveal">
+        <div><span class="jp-big">過程 · Process</span><h2>My process</h2></div>
+        <div class="prose">
+          <p>As the sole designer and developer, I ran the full product cycle, from early user interviews to a live Google Play release.</p>
+          <ol class="steps">
+            <li><span>Conducted user research interviews with fitness enthusiasts and personal trainers</span></li>
+            <li><span>Mapped user journeys from both the athlete and coach perspectives</span></li>
+            <li><span>Designed the full UI system in Figma using a custom component library</span></li>
+            <li><span>Built the frontend in Next.js + TypeScript with Firebase as the backend</span></li>
+            <li><span>Used AI-assisted coding (Firebase Studio + prompt engineering) to accelerate delivery</span></li>
+            <li><span>Iterated on beta tester feedback across multiple sprint cycles</span></li>
+            <li><span>Shipped the Android release to Google Play and own its releases and support</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="chapter"><span class="ep">Panels</span><span class="jp">画面</span></div>
+        <h2 class="sec-title">Project <span class="pop pop--teal">screens</span></h2>
+        <p class="sec-lede">Tap any panel to zoom in.</p>
+      </div>
+      <div class="gallery">
+        <figure class="panel wide reveal"><button type="button" data-full="images/trainerq1.jpg"><img src="images/trainerq1.jpg" alt="TrainerQ screen 1" loading="lazy"></button></figure>
+        <figure class="panel reveal"><button type="button" data-full="images/trainerq2.jpg"><img src="images/trainerq2.jpg" alt="TrainerQ screen 2" loading="lazy"></button></figure>
+        <figure class="panel reveal"><button type="button" data-full="images/trainerq3.jpg"><img src="images/trainerq3.jpg" alt="TrainerQ screen 3" loading="lazy"></button></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="chapter"><span class="ep">Mobile</span><span class="jp">携帯</span></div>
+        <h2 class="sec-title">Now on <span class="pop pop--orange">Google Play</span></h2>
+        <p class="sec-lede">Screens from the live Android app: home quests, community raid bosses, your character, guided training, the community feed, and Stat Scan.</p>
+      </div>
+      <div class="phones reveal">
+        <button type="button" data-full="images/trainerq/phone1.jpg"><img src="images/trainerq/phone1.jpg" alt="TrainerQ home with first quest and community boss raid" loading="lazy"></button>
+        <button type="button" data-full="images/trainerq/phone2.jpg"><img src="images/trainerq/phone2.jpg" alt="Community boss raid screen" loading="lazy"></button>
+        <button type="button" data-full="images/trainerq/phone3.jpg"><img src="images/trainerq/phone3.jpg" alt="Character profile with battle stats" loading="lazy"></button>
+        <button type="button" data-full="images/trainerq/phone4.jpg"><img src="images/trainerq/phone4.jpg" alt="Training screen with starter workouts and programs" loading="lazy"></button>
+        <button type="button" data-full="images/trainerq/phone5.jpg"><img src="images/trainerq/phone5.jpg" alt="Community activity feed" loading="lazy"></button>
+        <button type="button" data-full="images/trainerq/phone6.jpg"><img src="images/trainerq/phone6.jpg" alt="Stat Scan character sheet" loading="lazy"></button>
+      </div>
+      <div class="store-row" style="margin-top:48px">
+        <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.trainerq.app" target="_blank" rel="noopener"><img src="images/kasenso/google-play-badge.svg" alt="Get TrainerQ on Google Play" width="180" height="53"></a>
+        <a class="btn btn--white" href="https://trainerq.com" target="_blank" rel="noopener">Visit trainerq.com ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <a class="next-ep panel" href="tchrs.html">
+        <div><small>NEXT EPISODE · EP.04</small><strong>TCHRS</strong></div>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span class="tbc"><span class="jp">つづく</span>To be continued…</span>
+    <nav aria-label="Footer"><a href="index.html#work">Work</a><a href="archive.html">Archive</a><a href="mailto:jottpp@gmail.com">Email</a><a href="https://www.linkedin.com/in/gmmitra/" target="_blank" rel="noopener">LinkedIn</a></nav>
+    <span>© 2026 Kaikis · Designed &amp; coded by Jott</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TCHRS | George Mitra</title>
+  <meta name="description" content="TCHRS: a web assessment platform that turns teachers' lesson plans into exams, publishes them to class sections, and marks them automatically. Built by George Mitra.">
+  <meta property="og:title" content="TCHRS — case study by George Mitra">
+  <meta name="theme-color" content="#ff6a13">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='12' fill='%23ff6a13' stroke='%2316130f' stroke-width='5'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23fff'%3EK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Permanent+Marker&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>(function(){var d=document.documentElement;d.classList.add("js");try{var t=localStorage.getItem("kaikis-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+  <style>
+    .tchrs-cover { position: relative; aspect-ratio: 16 / 7; overflow: hidden; }
+    .tchrs-cover .flow-art { gap: clamp(8px, 2vw, 22px); padding: 18px; }
+    .tchrs-cover .flow-art span { font-size: clamp(12px, 2vw, 22px); padding: clamp(10px, 2vw, 22px) clamp(10px, 2vw, 24px); }
+    .tchrs-cover .flow-art b { font-size: clamp(18px, 3vw, 36px); }
+    .tchrs-cover .flow-art img { width: clamp(44px, 6vw, 72px); height: auto; top: 18px; right: 18px; }
+    @media (max-width: 520px) { .tchrs-cover { aspect-ratio: 4 / 3; } }
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Kaikis home"><span class="seal" aria-hidden="true">K</span>Kaikis</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#work" aria-current="page">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#arcs">Experience</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a class="btn" href="index.html#contact">Let's Talk</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="theme-btn" type="button" aria-pressed="false" aria-label="Switch to night mode"><span class="day" aria-hidden="true">昼</span><span class="night" aria-hidden="true">夜</span></button>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="back" href="index.html#work">← Back to work</a>
+      <div class="chapter"><span class="ep">EP.04</span><span class="jp">第四話</span></div>
+      <div><span class="sticker sticker--white">EdTech · Web Platform</span> <span class="sticker">Product Build</span></div>
+      <h1 class="case-title"><span class="pop pop--teal">TCHRS</span></h1>
+      <p class="case-lede">Turn your lesson plan into an exam, and the exam into a marked class report. TCHRS is a web assessment platform built around how Filipino public school teachers already work: lesson plans, class sections, LRNs, and paper exams.</p>
+
+      <dl class="meta panel">
+        <div><dt>Role</dt><dd>Product Owner · Product Design · Development</dd></div>
+        <div><dt>Status</dt><dd>Live web app · teacher dashboard + student portal</dd></div>
+        <div><dt>Stack</dt><dd><ul class="chips"><li class="chip chip--o">Next.js</li><li class="chip chip--o">React</li><li class="chip chip--t">Firebase</li><li class="chip chip--t">Firestore</li><li class="chip chip--p">Tailwind</li><li class="chip chip--y">Gemini AI</li></ul></dd></div>
+        <div><dt>Links</dt><dd><a href="https://tchrs--tchrs-app.asia-southeast1.hosted.app/" target="_blank" rel="noopener">Open TCHRS ↗</a><br><a href="mailto:jottpp@gmail.com?subject=TCHRS%20teacher%20invitation">Request a teacher invite</a></dd></div>
+      </dl>
+
+      <div class="tchrs-cover panel" aria-hidden="true">
+        <div class="flow-art">
+          <img src="images/tchrs/icon.png" alt="">
+          <span>Lesson<br>plan</span><b>→</b><span>AI<br>exam</span><b>→</b><span>Publish to<br>sections</span><b>→</b><span>Class<br>report</span>
+        </div>
+      </div>
+
+      <div class="try-panel panel">
+        <div>
+          <span class="sticker sticker--teal">For teachers</span>
+          <h2>Try TCHRS with your class</h2>
+          <p>TCHRS is live. Teacher accounts are invite-only for now, so send me a quick email and I'll send you an invitation link. Students don't need an account: they sign in with their LRN and the access code you give them.</p>
+        </div>
+        <div class="try-actions">
+          <a class="btn" href="https://tchrs--tchrs-app.asia-southeast1.hosted.app/" target="_blank" rel="noopener">Open TCHRS ↗</a>
+          <a class="btn btn--white" href="mailto:jottpp@gmail.com?subject=TCHRS%20teacher%20invitation&amp;body=Hi%20Jott%2C%20I'd%20like%20to%20try%20TCHRS.%0A%0AName%3A%0ASchool%3A%0AGrade%20%2F%20subject%3A">✉ Request an invite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-body band">
+    <div class="wrap">
+      <div class="case-sec reveal">
+        <div><span class="jp-big">課題 · Challenge</span><h2>The challenge</h2></div>
+        <div class="prose">
+          <p>Public school teachers already write detailed lesson plans, then write the exams for them separately, check every paper by hand, and tally the results into a report. And many classes still sit their exams on paper.</p>
+          <p>The challenge: let a teacher go from <span class="marker">lesson plan to marked class report</span> in one place, whether the class sits the exam online or on paper, without giving every student an email account.</p>
+        </div>
+      </div>
+
+      <div class="case-sec reveal">
+        <div><span class="jp-big">解決 · Solution</span><h2>The solution</h2></div>
+        <div class="prose">
+          <p>TCHRS starts from what teachers already have. They upload their lesson plans, generate an exam from one or several plans, edit it freely, and publish it only to the class sections it's meant for. Paper and online results meet in the same report.</p>
+          <ul class="feature-list">
+            <li>Upload lesson plans (.docx, .md, .txt, or pasted text), several at once</li>
+            <li>AI-generated exams spread across a whole quarter's plans, fully editable</li>
+            <li>Table of Specification support, with items tagged by competency and Bloom level</li>
+            <li>Publish to specific class sections, with an optional closing time</li>
+            <li>Students sign in with their LRN and an access code, with no email account needed</li>
+            <li>Print-ready student papers, answer keys, and tear-off answer sheets</li>
+            <li>Photo-based paper marking: snap the answer sheet and confirm what was read</li>
+            <li>Automatic class reports, per-question analysis, mastery by competency, and CSV export</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-sec reveal">
+        <div><span class="jp-big">流れ · Flow</span><h2>How it works</h2></div>
+        <div class="prose">
+          <p>TCHRS grew out of an earlier, broader school-management prototype of mine. I rebuilt it from scratch as a focused, independent assessment app that does one job end to end.</p>
+          <ol class="steps">
+            <li><span>Upload lesson plans, structured into units for a day, week, month, term, or year</span></li>
+            <li><span>Generate the exam from one or several plans, then edit, reorder, or shuffle</span></li>
+            <li><span>Set up classes (grade level + section) and print student access codes</span></li>
+            <li><span>Publish to the sections that should see it, or print it for a paper sitting</span></li>
+            <li><span>Students sit it online, or the teacher records paper results by photo, tick, or score</span></li>
+            <li><span>Read the report: pass/fail rate, every score, a per-question breakdown, and a per-class split</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <a class="next-ep panel" href="quibble.html">
+        <div><small>NEXT EPISODE · EP.05</small><strong>Quibble</strong></div>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span class="tbc"><span class="jp">つづく</span>To be continued…</span>
+    <nav aria-label="Footer"><a href="index.html#work">Work</a><a href="archive.html">Archive</a><a href="mailto:jottpp@gmail.com">Email</a><a href="https://www.linkedin.com/in/gmmitra/" target="_blank" rel="noopener">LinkedIn</a></nav>
+    <span>© 2026 Kaikis · Designed &amp; coded by Jott</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
