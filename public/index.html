@@ -14,7 +14,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Permanent+Marker&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script>(function(){var d=document.documentElement;d.classList.add("js");try{var t=localStorage.getItem("kaikis-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+  <script>
+    // Which version kaikis.com opens by default: "manga" or "prism". A visitor's own pick overrides it.
+    var KAIKIS_DEFAULT_VERSION = "manga";
+    (function(){var v=KAIKIS_DEFAULT_VERSION;try{v=localStorage.getItem("kaikis-version")||v}catch(e){}if(v==="prism"){location.replace("/prism/"+location.hash);return}var d=document.documentElement;d.classList.add("js");try{var t=localStorage.getItem("kaikis-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t)}catch(e){}document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("[data-version]");if(a){try{localStorage.setItem("kaikis-version",a.getAttribute("data-version"))}catch(x){}}})})();
+  </script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -27,6 +31,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#arcs">Experience</a></li>
       <li><a href="archive.html">Archive</a></li>
+      <li><a href="/prism/" data-version="prism" title="Switch to the Prism version of this site">⇄ Prism view</a></li>
       <li><a class="btn" href="#contact">Let's Talk</a></li>
     </ul>
     <div class="nav-tools">
@@ -441,7 +446,7 @@
 <footer class="footer">
   <div class="wrap">
     <span class="tbc"><span class="jp">つづく</span>To be continued…</span>
-    <nav aria-label="Footer"><a href="#work">Work</a><a href="archive.html">Archive</a><a href="mailto:jottpp@gmail.com">Email</a><a href="https://www.linkedin.com/in/gmmitra/" target="_blank" rel="noopener">LinkedIn</a></nav>
+    <nav aria-label="Footer"><a href="#work">Work</a><a href="archive.html">Archive</a><a href="mailto:jottpp@gmail.com">Email</a><a href="https://www.linkedin.com/in/gmmitra/" target="_blank" rel="noopener">LinkedIn</a><a href="/prism/" data-version="prism">⇄ Prism view</a></nav>
     <span>© 2026 Kaikis · Designed &amp; coded by Jott</span>
   </div>
 </footer>
