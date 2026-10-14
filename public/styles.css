@@ -540,7 +540,7 @@ p { margin: 0 0 1em; }
   .work-grid { grid-template-columns: 1fr; }
   .work-card, .work-card--big, .work-card--wide { grid-column: auto; }
   .work-card--wide { flex-direction: column; }
-  .work-card--wide .work-media { aspect-ratio: 16 / 10; min-height: 0; border-right: 0; border-bottom: var(--line); }
+  .work-card--wide .work-media { flex: none; aspect-ratio: 16 / 10; min-height: 0; border-right: 0; border-bottom: var(--line); }
 }
 
 /* ---------- about / character card ---------- */
