@@ -1,5 +1,5 @@
 // Which version visitors get by default: "manga" or "prism". A visitor's own pick overrides it.
-var KAIKIS_DEFAULT_VERSION = "manga";
+var KAIKIS_DEFAULT_VERSION = "prism";
 
 (function () {
   var path = location.pathname;
