@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrainerQ Design System | George Mitra</title>
+  <meta name="description" content="TrainerQ Design System: a Figma component library built on shadcn/ui that maps 1:1 to code. By George Mitra.">
+  <meta property="og:title" content="TrainerQ Design System — case study by George Mitra">
+  <meta property="og:image" content="https://kaikis.web.app/images/trainerqui-hero.jpg">
+  <meta name="theme-color" content="#2a0f4f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232a0f4f'/%3E%3Cpath d='M32 10 50 32 32 54 14 32Z' fill='%23c9a7ff'/%3E%3Cpath d='M32 10 50 32H14Z' fill='%23e6d6ff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/prism/prism.css">
+  <script src="/version.js"></script>
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="/prism/" aria-label="Kaikis home"><span class="logo-gem" aria-hidden="true"></span>Kaikis</a>
+    <nav aria-label="Main">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/prism/#work" aria-current="page">Work</a></li>
+        <li><a href="/prism/#about">About</a></li>
+        <li><a href="/prism/#arcs">Experience</a></li>
+        <li><a href="/prism/archive.html">Archive</a></li>
+        <li><a class="switch" href="/trainerq-ds.html" data-version="manga" title="Switch to the Manga version of this page"><span aria-hidden="true">⇄</span> Manga view</a></li>
+        <li><a class="btn btn--lime btn--sm" href="/prism/#contact">Let's talk</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="hero-beam" aria-hidden="true"></div>
+    <div class="wrap">
+      <a class="back" href="/prism/#work">← Back to work</a>
+      <p class="kicker">Case study 06</p>
+      <div class="badges"><span class="badge badge--lime">Design System · Figma</span></div>
+      <h1 class="case-title">TrainerQ <span class="grad">Design System</span></h1>
+      <p class="case-lede">A Figma component library built on shadcn/ui, bridging design and engineering with a unified, battle-tested design language for TrainerQ.</p>
+
+      <dl class="case-meta card">
+        <div><dt>Role</dt><dd>Design Systems Lead · Component Architecture</dd></div>
+        <div><dt>Year</dt><dd>2025</dd></div>
+        <div><dt>Tools</dt><dd><ul class="chips"><li>Figma</li><li>shadcn/ui</li><li>Radix UI</li><li>Tailwind CSS</li><li>TypeScript</li><li>Storybook</li></ul></dd></div>
+        <div><dt>Product</dt><dd><a href="/prism/trainerq.html">TrainerQ →</a></dd></div>
+      </dl>
+
+      <figure class="case-cover card">
+        <img src="/images/trainerqui-hero.jpg" alt="TrainerQ UI design system cover" width="960" height="540">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="case-sec reveal">
+        <div><p class="kicker">Challenge</p><h2>The challenge</h2></div>
+        <div class="prose">
+          <p>As a solo designer-developer, keeping visual consistency across a product as complex as TrainerQ quickly becomes unsustainable without a structured system. TrainerQ has dashboards, RPG progression screens, coach portals, and a marketplace.</p>
+          <p>The challenge: build a design system that is fast to work with in Figma, <span class="marker">maps 1:1 to the code components</span>, and scales as the product grows, all without a dedicated design systems team.</p>
+        </div>
+      </div>
+
+      <div class="case-sec reveal">
+        <div><p class="kicker">Solution</p><h2>The solution</h2></div>
+        <div class="prose">
+          <p>I chose shadcn/ui as the foundation (a component collection built on Radix UI primitives and Tailwind CSS) and extended it with TrainerQ-specific patterns. The Figma library mirrors the codebase component for component, so nothing gets lost translating design into implementation.</p>
+          <ul class="feature-list">
+            <li>Full component library in Figma with variants, states, and interactive prototyping</li>
+            <li>Token-based color system aligned with Tailwind CSS custom properties</li>
+            <li>Dark-mode-first design with consistent contrast ratios across all surfaces</li>
+            <li>Game components: XP bars, character stat cards, tier badges, achievement modals</li>
+            <li>Shared spacing, typography, and shadow scales as Figma variables</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-sec reveal">
+        <div><p class="kicker">Process</p><h2>My process</h2></div>
+        <div class="prose">
+          <p>The system grew iteratively alongside the product. I designed components only when they were needed, which avoided premature abstraction while keeping everything documented and reusable.</p>
+          <ol class="steps">
+            <li><span>Audited existing screens to identify repeated UI patterns worth abstracting</span></li>
+            <li><span>Defined the token layer first: color, typography, spacing, elevation</span></li>
+            <li><span>Built base components and extended them with TrainerQ-specific overrides</span></li>
+            <li><span>Created usage guidelines and annotation templates directly in Figma</span></li>
+            <li><span>Validated component fidelity by building screens from library pieces only</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">Snapshots</p>
+        <h2>System <span class="grad">snapshots</span></h2>
+        <p class="lede">Component library previews and usage examples. Click to zoom in.</p>
+      </div>
+      <div class="gallery">
+        <figure class="card reveal"><button class="zoom" type="button" data-full="/images/trainerqui1.jpg"><img src="/images/trainerqui1.jpg" alt="TrainerQ design system components" loading="lazy"></button></figure>
+        <figure class="card reveal"><button class="zoom" type="button" data-full="/images/trainerqui3.jpg"><img src="/images/trainerqui3.jpg" alt="TrainerQ design system usage examples" loading="lazy"></button></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <a class="card next-case reveal" href="/prism/archive.html">
+        <div><small>Earlier work</small><strong>The Archive</strong></div>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Kaikis · Designed &amp; coded by Jott</span>
+    <nav aria-label="Footer">
+      <a href="/prism/#work">Work</a><a href="/prism/archive.html">Archive</a><a href="mailto:jottpp@gmail.com">Email</a><a href="https://www.linkedin.com/in/gmmitra/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/trainerq-ds.html" data-version="manga">⇄ Manga view</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="/prism/prism.js"></script>
+</body>
+</html>

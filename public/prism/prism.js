@@ -27,6 +27,39 @@
     }
   });
 
+  var box = document.createElement("div");
+  box.className = "lightbox";
+  box.hidden = true;
+  box.setAttribute("role", "dialog");
+  box.setAttribute("aria-modal", "true");
+  box.setAttribute("aria-label", "Image preview");
+  box.innerHTML = '<button class="btn btn--ghost btn--sm lightbox-close" type="button">Close ✕</button><div class="lightbox-inner"><img alt=""></div>';
+  document.body.appendChild(box);
+  var boxImg = box.querySelector("img");
+  var closeBtn = box.querySelector(".lightbox-close");
+  var opener = null;
+
+  function closeBox() {
+    box.hidden = true;
+    boxImg.removeAttribute("src");
+    document.body.style.overflow = "";
+    if (opener) opener.focus();
+  }
+  document.addEventListener("click", function (e) {
+    var trigger = e.target.closest("[data-full]");
+    if (!trigger) return;
+    opener = trigger;
+    var thumb = trigger.querySelector("img");
+    boxImg.alt = thumb ? thumb.alt : "";
+    boxImg.src = trigger.getAttribute("data-full");
+    box.hidden = false;
+    document.body.style.overflow = "hidden";
+    closeBtn.focus();
+  });
+  closeBtn.addEventListener("click", closeBox);
+  box.addEventListener("click", function (e) { if (e.target === box) closeBox(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !box.hidden) closeBox(); });
+
   var items = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {
     items.forEach(function (el) { el.classList.add("in"); });
